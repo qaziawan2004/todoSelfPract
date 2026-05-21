@@ -276,7 +276,7 @@ function logOut(){
  
 
     localStorage.removeItem("storage", JSON.stringify(storage));
-
+    localStorage.removeItem("todos", JSON.stringify(todos))
     alert("Log out Successful");
     window.location.href = "./SignUp.html"
 };

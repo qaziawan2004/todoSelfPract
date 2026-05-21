@@ -1,14 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #01011d;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+
+.container {
     width: 100%;
     max-width: 500px;
     min-height: 100vh;
@@ -20,36 +22,43 @@ body{
     flex-direction: column;
 
 }
-.container h1{
+
+.container h1 {
     text-align: center;
-    color:  #299804;
+    color: #299804;
 }
-.input-box{
+
+.input-box {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
-input{
+
+input {
     width: 100%;
     padding: 10px;
     border-radius: 6px;
 }
+
 .container input,
-.container button{
+.container button {
     margin-top: 10px;
 }
-.Enter{
+
+.Enter {
     padding: 10px;
     border-radius: 6px;
     background: #b52707;
     color: #fff;
 }
-ul{
+
+ul {
     width: 100%;
     padding: 0;
 }
-li{
+
+li {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -61,7 +70,8 @@ li{
     color: #000000;
     border-radius: 6px;
 }
-li button{
+
+li button {
     margin-left: 5px;
     margin-top: 5px;
 
@@ -72,10 +82,12 @@ li button{
 
     cursor: pointer;
 }
-.nav h2{
+
+.nav h2 {
     color: #299804;
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -89,32 +101,37 @@ li button{
     top: 0;
     z-index: 100;
 }
-.nav img{
+
+.nav img {
     background-color: #000000;
     box-sizing: border-box;
     border-radius: 100px;
-    width: 40px; 
+    width: 40px;
     height: 40px;
 }
-.nav a{
+
+.nav a {
     text-decoration: none;
     color: #01011d;
     font-size: 18px;
 }
-.nav a:hover{
+
+.nav a:hover {
     text-decoration: underline;
     font-weight: 600;
     color: #fff;
 }
+
 .footer {
-    margin-top: auto;           
+    margin-top: auto;
     width: 100%;
 }
+
 .footer-nav {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 0;           
+    border-radius: 0;
     padding: 18px 20px;
-    justify-content: space-between;   
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 15px;
     background: #c5bebef3;
@@ -128,7 +145,8 @@ li button{
     font-size: 18px;
     text-align: center;
 }
-.footer h2{
+
+.footer h2 {
     color: #299804;
 }
 
@@ -137,7 +155,8 @@ li button{
     display: flex;
     flex-direction: column;
 }
-.sign-container{
+
+.sign-container {
     width: 100%;
     max-width: 450px;
     background: #ffffff14;
@@ -150,7 +169,7 @@ li button{
     margin: 50px auto;
 }
 
-.sign-container h1{
+.sign-container h1 {
     text-align: center;
     margin-bottom: 25px;
     color: #299804;
@@ -159,7 +178,7 @@ li button{
 
 .sign-container input[type="text"],
 .sign-container input[type="email"],
-.sign-container input[type="password"]{
+.sign-container input[type="password"] {
     width: 100%;
     padding: 12px;
     margin-top: 12px;
@@ -171,51 +190,74 @@ li button{
     color: #000;
 }
 
-.sign-container input::placeholder{
+.sign-container input::placeholder {
     color: #555;
 }
-.sign-container input[type="checkbox"]{
+
+.sign-container input[type="checkbox"] {
     display: inline;
 }
 
-.cc{
+.cc {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-top: 18px;
 }
 
-.cc input{
+.cc input {
     width: auto;
     margin: 0;
 }
 
-.cc label{
+.cc label {
     margin: 0;
     font-size: 15px;
 }
-.gender{
+
+.gender {
     display: flex;
     gap: 20px;
     margin-top: 18px;
     align-items: center;
 }
 
-.gender label{
+.gender label {
     display: flex;
     align-items: center;
     gap: 6px;
     font-size: 15px;
 }
 
-.bb{
+.bb {
     display: flex;
-    gap: 60px;
-}
-.sign-container button{
-    width: 50%;
+    align-items: center;
+    gap: 30px;
     margin-top: 22px;
+}
+
+.bb a {
+    text-decoration: none;
+    border: 2px solid #299804;
+    border-radius: 8px;
+    padding: 10px;
+    align-items: center;
+    width: 50%;
+    color: #ffffff;
+    background-color: #299804;
+    text-align: center;
+}
+
+.bb a:hover {
+    background-color: #1f7402;
+    transform: scale(1.02);
+}
+
+.sign-container button {
+    width: 50%;
+
     padding: 12px;
+
     border: none;
     border-radius: 8px;
     background-color: #299804;
@@ -225,7 +267,8 @@ li button{
     cursor: pointer;
     transition: 0.3s;
 }
-.logout{
+
+.logout {
     width: 8%;
     padding: 12px;
     border: none;
@@ -237,29 +280,36 @@ li button{
     cursor: pointer;
     transition: 0.3s;
 }
-.logout:hover{
-    background-color: #1f7402;
-    transform: scale(1.02);
-}
-.sign-container button:hover{
+
+.logout:hover {
     background-color: #1f7402;
     transform: scale(1.02);
 }
 
-@media(max-width:500px){
+.sign-container button:hover {
+    background-color: #1f7402;
+    transform: scale(1.02);
+}
 
-    .sign-container{
+@media(max-width:500px) {
+
+    .sign-container {
         padding: 25px 18px;
     }
 
-    .sign-container h1{
+    .sign-container h1 {
         font-size: 26px;
     }
-    .logout{
+
+    .logout {
         width: 30%;
     }
+    .bb a{
+        width: 50%;
+    }
 }
-.Log-container{
+
+.Log-container {
     width: 100%;
     max-width: 450px;
     background: #ffffff14;
@@ -271,26 +321,27 @@ li button{
     box-shadow: 0 8px 32px #0000004d;
     margin: 80px auto;
 }
-.asd{
-    color: #fff; 
+
+.asd {
+    color: #fff;
     margin-left: 10px;
 }
 
-.Log-container h1{
+.Log-container h1 {
     text-align: center;
     margin-bottom: 25px;
     color: #299804;
     font-size: 32px;
 }
 
-.input-fields{
+.input-fields {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
 .input-fields input[type="email"],
-.input-fields input[type="password"]{
+.input-fields input[type="password"] {
     width: 100%;
     padding: 12px;
     border: none;
@@ -301,11 +352,11 @@ li button{
     color: #000;
 }
 
-.input-fields input::placeholder{
+.input-fields input::placeholder {
     color: #555;
 }
 
-.input-fields button{
+.input-fields button {
     width: 50%;
     margin-top: 10px;
     padding: 12px;
@@ -319,7 +370,7 @@ li button{
     transition: 0.3s;
 }
 
-.input-fields button:hover{
+.input-fields button:hover {
     background-color: #1f7402;
     transform: scale(1.02);
 }
