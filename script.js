@@ -265,7 +265,7 @@ function login() {
         localStorage.setItem("currentUser", JSON.stringify(foundUser));
 
         // REDIRECT
-        window.location.href = "./Todo.html";
+        window.location.href = "./index.html";
 
     } else {
 

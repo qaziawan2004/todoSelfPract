@@ -1,116 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-body {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-body > div {
-  width: 400px;
-  padding: 25px;
-  border-radius: 15px;
-  background: #ffffff;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-  text-align: center;
-}
-
-h1 {
-  margin-bottom: 20px;
-  color: #222;
-}
-
-
-#input {
-  width: 65%;
-  padding: 10px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  outline: none;
-  transition: 0.3s;
-}
-
-#input:focus {
-  border-color: #2c5364;
-}
-
-button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 8px;
-  background: #2c5364;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #203a43;
-}
-
-
-#ul {
-  margin-top: 20px;
-  list-style: none;
-}
-
-
-#ul li {
-  background: #f1f5f9;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-#ul button {
-  margin-left: 5px;
-  padding: 6px 10px;
-  font-size: 12px;
-}
-
-
-#ul button:nth-child(2) {
-  background: #ff4d4d;
-}
-
-#ul button:nth-child(2):hover {
-  background: #cc0000;
-}
-
-#ul button:nth-child(3) {
-  background: #28a745;
-}
-
-#ul button:nth-child(3):hover {
-  background: #1e7e34;
-}
-</style>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body >
-    <div style="border: 2px solid black; width: 50vw; height: 100vh; justify-self: center; background-color: #ffff; " >
-    <h1 style="text-align: center;">Todo App</h1>
-    <input type="text" id="input">
-    <button onClick="submit()">Enter</button>
-    <ul id="ul"></ul>
+
+<body>
+    <header>
+        <nav class="nav">
+            <h2>Todo App</h2>
+            <a href="./Login.html">Login</a>
+            <a href="./SignUp.html">Create Account</a>
+            <button onclick="logOut()" class="logout">Logout</button>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Todo App</h1>
+        <div class="input-box">
+            <input type="text" id="input">
+            <button class="Enter" onclick="submit()">Enter</button>
+        </div>
+        <ul id="ul"></ul>
     </div>
+
+  <footer class="footer">
+    <div class="footer-nav"> 
+        <h2>Todo App</h2>
+        <p>&copy; 2026 Todo App. All rights reserved. Made with ❤️ by Awan.</p>
+    </div>
+
+</footer>
     <script src="./script.js"></script>
 </body>
+
 </html>
