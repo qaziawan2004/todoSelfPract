@@ -255,6 +255,9 @@ li button{
     .sign-container h1{
         font-size: 26px;
     }
+    .logout{
+        width: 30%;
+    }
 }
 .Log-container{
     width: 100%;
